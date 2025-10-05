@@ -1,0 +1,267 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<body bgcolor=#DFF0ED>
+    
+            
+    
+        <head>
+            <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome</title> 
+        <style>
+              
+              * {
+                box-sizing: border-box;
+              }
+              
+              
+              .container {
+                padding: 17px 80px;
+                margin-top: -35%;
+                margin-right: 20%;
+                background-color: #DFF0ED;
+                font-size: 20px;
+              }
+              
+              input[type=text], input[type=password] {
+                
+                width: 50%;
+                padding: 16px 20px;
+                margin-right: 50%;
+                margin-top: 20px;
+                display: inline-block;
+                border: none;
+                background: #fdfdfd;
+              }
+              
+              input[type=text], input[type=password] {
+                background-color: #ddd;
+                outline: none;
+              }
+              
+            
+              .loginbt {
+                background-color: #05a168;
+                color: #f3f9f8;
+                padding: 16px 20px;
+                margin: 20px 0;
+                
+                border: none;
+                cursor: pointer;
+                width: 50%;
+                opacity: 0.9;
+              }
+              
+              .loginbt:hover {
+                opacity: 1;
+              }
+              
+            
+              
+              .resetbt {
+                background-color: #450458;
+                color: rgb(255, 254, 255);
+                padding: 16px 20px;
+                margin: -10px 0;
+                margin-top: -30%;
+                border: none;
+                cursor: pointer;
+                width: 50%;
+                opacity: 1;
+              }
+              .resetbt:hover {
+                opacity: 1;
+              }
+              ul {
+                list-style-type:none;
+                margin: 0;
+                padding: 5px;
+                overflow: hidden;
+              }
+              
+              li {
+                float: left;
+              }
+              
+              li a {
+                display:inline-block;
+                font-size: 20px;
+                padding: 14px 16px;
+                text-align:center;
+                color:#450458;
+                background-color: #DFF0ED;
+                text-decoration: none;
+              }
+              li a:hover {
+                transform-box:fill-box;
+                font-size:150%;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              background-color:rgb(152, 141, 227);
+              }
+             
+             
+
+            .bounce {
+                
+                height: 80px;
+                overflow: hidden;
+                position: center;
+                align-items: center;
+                background: #031c74;
+                color: #c9f2f4;
+                border: 3px solid #0b0339;
+            }
+            
+            .bounce h1 {
+                position: absolute;
+                width: 100%;
+                height: 50%;
+                margin: 10;
+                line-height: 20px;
+                text-align: center;
+                -moz-transform: translateX(80%);
+                -webkit-transform: translateX(80%);
+                transform: translateX(80%);
+                -moz-animation: bouncing-text 10s linear infinite alternate;
+                -webkit-animation: bouncing-text 10s linear infinite alternate;
+                animation: bouncing-text 10s linear infinite alternate;
+            }
+            
+            @-moz-keyframes bouncing-text {
+                0% {
+                    -moz-transform: translateX(50%);
+                }
+                100% {
+                    -moz-transform: translateX(-50%);
+                }
+            }
+            
+            @-webkit-keyframes bouncing-text {
+                0% {
+                    -webkit-transform: translateX(50%);
+                }
+                100% {
+                    -webkit-transform: translateX(-50%);
+                }
+            }
+            
+            @keyframes bouncing-text {
+                0% {
+                    -moz-transform: translateX(80%);
+                    -webkit-transform: translateX(50%);
+                    transform: translateX(50%);
+                }
+                100% {
+                    -moz-transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                }
+            }
+          
+            .gif-container {
+                display: flex;
+                margin: 70px;
+                padding: -50px;
+                height: 80%;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                
+                right:-30%;
+            }
+            
+            .gif-container img {
+                width: 470px;
+                height: 400px;
+                
+                display: block;
+            }
+            .button_b {
+              
+  background-color: #04AA6D;
+  border: none;
+  color: rgb(38, 59, 222);
+  padding: 14px 25px;
+  text-align:center;
+  text-decoration:none;
+  display:block;
+  font-size: 16px;
+  margin: 12px 50px;
+  transition-duration:0.4s;
+  /* cursor:alias; */
+  position:absolute;
+     top:0;
+     right:0;
+}
+.button1 {
+  background-color: #A100FF; 
+  color: #fcfbfb; 
+  border: 2px solid #f3f6f4;
+  margin:12px 170px;
+  font-style:bold;
+  border-radius: 10px;
+}
+.button1:hover {
+  background-color: #aeb3b2;
+  color: white;
+}
+.button2 {
+  background-color:  #A100FF;
+  color: #fffefe; 
+  border: 2px solid #f4f8f7;
+  font-style: bold;
+  border-radius: 10px;
+}
+.button2:hover {
+  background-color: #aeb3b2;;
+  color: white;
+}
+            
+        </style>
+    </body>
+    </head>
+    
+
+    <body>
+      <!-- <form action="wel"> -->
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#What's New">What's New</a></li>
+            <li><a href="aboutus">About</a></li>
+            <li><a href="#Contact Us">Contact Us</a></li>
+        </ul>
+        <div class="bounce">
+            <h1> ** Ensuring Easy Everytime ** A Service for Millions ** </h1>
+        </div>
+         <div class="gif-container">
+            <img src='{% static "Symbol.gif" %}' alt="abcd">
+        </div>
+        
+            <div class="container">
+              <h1>Welcome To PayEasy Online Services</h1>
+              
+              
+          
+              <label for="UPI_Id"><b>UPI_Id : </b></label>
+              <input type="text" placeholder="Enter UPI_Id" name="UPI_Id" ><br><br>
+          
+              <label for="PIN"><b>PIN : </b></label>
+              <input type="password" placeholder="Enter PIN" name="PIN"  ><br>
+          
+              
+          
+              <button type="submit" class="loginbt">Login</button>
+              <button type="submit" class="resetbt">Reset</button>
+            </div>
+            <a href="login">
+          <button class="button_b button1">Login</button></a>
+          <a href="register">
+          <button class="button_b button2">Sign Up</button></a>
+            <!-- </form> -->
+    </body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #DFF0ED;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    height:150%;
+    width:90%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(59, 161, 233, 0.994);
+    border-style: outset;
+  }
+  .header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #4d088d;
+    background-color:rgba(174, 227, 136, 0.954);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  .about_us{
+    text-align: center;
+    color: rgb(75, 34, 5);
+    text-decoration:wavy;
+    font-size: 22px;
+    
+
+  }
+  .p1{
+    font-size: 30px;
+    color:rgba(14, 1, 1, 0.732);
+    margin-left: 20px;
+  }
+  .menu-bar {
+    position: fixed;
+    top: 2px;
+    right: 0;
+    background-color: #0a19a5;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+  }
+  .menu-toggle {
+    color: #fff;
+    cursor:context-menu;
+  }
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #2b83e1ef;
+    padding: 10px;
+    border-radius: 7px;
+  }
+  .menu-items a {
+    width:100px;
+    display: block;
+    color: #fff;
+    text-decoration:solid;
+    margin-bottom: 10px;
+  }
+  .menu-items a:hover {
+    background-color: #2b83e1ef;
+  }
+  /* Show menu items when checkbox is checked */
+  #toggle:checked + .menu-items {
+    display: block;
+  }
+.footer{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #0a19a5;
+   color: white;
+   text-align: center;
+}
+</style>
+<body>
+  <div class="header">
+    <h1>Welcome to PayEasy</h1>
+    
+  </div>
+  <div class="container">
+  <div class="about_us">
+    <h2>About Us</h2></div>
+    <div class="p1">
+    <p>We are a team of passionate individuals dedicated to providing high-quality services of online banking to our customers.PayEasy is a user friendly online banking system in which an account holder can access all the necessary products launched by us.Our mission is to provide a smooth experience to our customers so that they don't face any difficulty at the time of money transfer. </p><br>
+    <p>This website is made by seven MCA final year students of BPPIMT. Our only motive is to provide seamless experience to a lot of people those who transacts funds online. </p>
+  </div>
+    <div class="footer">
+      <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </div>
+  <div class="menu-bar">
+    <label for="toggle" class="menu-toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" style="display:none;">
+    <div class="menu-items">
+      <a href="Welcome">Log Out</a>
+      <a href="home">Home</a></div>
+  
+</body>
+</html>
+<!-- {% for i in u %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.pwd}}</td>
+                <!-- <td><a href="del/{{i.id}}">Delete</a></td> -->
+            </tr>
+            <!-- <tr><td><a href="edit/{{i.id}}">Edit</a></td></tr> -->
+            {% endfor %} -->

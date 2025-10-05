@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Registration Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #85d5f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #120f0f;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 0 0 20px 0 ;
+            border-bottom: 3px solid rgb(166, 123, 223) ;
+        
+        }
+       
+        .form {
+            width: 100%;
+            
+        }
+
+        .input_field {
+            margin-bottom: 20px;
+            
+        }
+
+        .input_field label {
+            display: block;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .input_field input,
+        .input_field select {
+            width: calc(100% - 10px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .input_field input[type="checkbox"] {
+            width:  auto;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .ok-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .cancel-btn {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .buttons button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <form action="admininput">
+        <div class="container">
+            <div class="title"><h3>Registration Form</h3></div>
+            <div class="form">
+             
+                <div class="input_field">
+                    <label for="user_id">user_id :</label>
+                <div>
+                    <input type="text" name="user_id" placeholder="Enter user_id" required>
+                </div>
+                <div class="input_field">
+                    <label for="password">Password :</label>
+                    <div>
+                        <input type="password" name="password" placeholder="Enter Password" required>
+                    </div>
+                
+               
+                <div>
+                    <p>By creating an account you agree to our <a href="#" style="color:#f68237">Terms & Privacy</a>.</p><br>
+                </div>
+                <div class="buttons">
+                  <button type="submit" class="cancel-btn">Cancel</button>
+                    <button type="submit">submit</button>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+    </form>
+    
+</body>
+</html

@@ -1,0 +1,19 @@
+<!-- restaurant/templates/restaurant/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Babumoshai Restaurant</title>
+</head>
+<body>
+    <h1>Welcome to Babumoshai</h1>
+    <form action="{% url 'search' %}" method="get">
+        <input type="text" name="q" placeholder="Search for dishes...">
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% for dish in dishes %}
+        <li>{{ dish.name }} - {{ dish.price }} <a href="{% url 'order' dish.id %}">Order</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

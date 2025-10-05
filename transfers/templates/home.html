@@ -1,0 +1,349 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="styles.css">
+  <title>Home_Page</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      font-stretch: expanded;
+      font-weight: bolder;
+      color: rgb(11, 117, 74);
+      text-decoration: darkgreen;
+      text-decoration-line: underline;
+      background-color: #DFF0ED;
+     font-size: 20px;
+      text-align: center;
+      opacity:1;
+    }
+    .logo_container {       
+      position: absolute;
+      
+      margin-top: -835px;
+      left: 16px;
+    }
+    img { 
+      width: 120px;
+      height: 100px;
+      border-radius: 50%;
+      opacity: 1;
+    }
+    .image-button {
+        width: 150px; 
+        height: 160px; 
+        margin-left: 100px;
+        margin-top: 360px;
+        padding-left: 10%;
+        background-image: url('{% static "Personal_Account_Info.png" %}'); 
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 50%;
+    }
+      
+      
+      
+      .image-button:hover {
+        transform-box:fill-box;
+        background-color:#5f72d6;
+        opacity: 0.9; 
+      }
+      
+      .image-button:active {
+        transform: scale(0.7); 
+        
+      }
+      .image-button1 {
+        width: 150px; 
+        height: 160px; 
+        margin-left: 10%;
+        margin-top: 50px;
+        padding-left: 10%;
+        background-image: url('{% static "Pay_Bills.png" %}'); 
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 50%;
+      }
+      
+      
+      .image-button1:hover {
+        transform-box:fill-box;
+        background-color:#5f72d6;
+        opacity: 0.9; 
+      }
+      
+      .image-button1:active {
+        transform: scale(0.7); 
+        
+      }
+      .image-button2 {
+        width: 150px; 
+        height: 160px; 
+
+       margin-left: 10%;
+        margin-top: 50px;
+        padding-left: 10%;
+        background-image: url('{% static "Bank_Transfer.png" %}'); 
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 50%;
+      }
+      
+      
+      .image-button2:hover {
+        transform-box:fill-box;
+        background-color:#5f72d6;
+        opacity: 0.9; 
+      }
+      
+      .image-button2:active {
+        transform: scale(0.7); 
+        
+      }
+      .image-button3 {
+        width: 150px; 
+        height: 160px; 
+        margin-left: 100px;
+        margin-top: 30px;
+        padding-left: 10%;
+        background-image: url('{% static "Pay_UPI_ID.png" %}'); 
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 50%;
+      }
+      
+      
+      .image-button3:hover {
+        transform-box:fill-box;
+        background-color:#5f72d6;
+        opacity: 0.9; 
+      }
+      
+      .image-button3:active {
+        transform: scale(0.7); 
+        
+      }
+      .image-button4 {
+        width: 150px; 
+        height: 160px; 
+        margin-left: 10%;
+        margin-top: 20px;
+        padding-left: 10%;
+        background-image: url('{% static "Check_Balance.png" %}'); 
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 50%;
+      }
+      
+      
+      .image-button4:hover {
+        transform-box:fill-box;
+        background-color:#5f72d6;
+        opacity: 0.9; 
+      }
+      
+      .image-button4:active {
+        transform: scale(0.7); 
+        
+      }
+      .image-button5 {
+        width: 150px; 
+        height: 160px; 
+        margin-left: 10%;
+        margin-top: 20px;
+        padding-left: 10%;
+        background-image: url('{% static "Transaction_History.png" %}'); 
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 50%;
+        text-align: center;
+      }
+      .image-button5_label {
+        font-size: 14px;
+        color: #0c0101;
+      }
+      
+     
+      .image-button5:hover {
+        transform-box:fill-box;
+        background-color:#5f72d6;
+        opacity: 0.9; 
+      }
+      
+      .image-button5:active {
+        transform: scale(0.7); 
+        
+      }
+      .header {
+        width: 100%;
+        height: 300px; 
+        overflow: hidden;
+        position:absolute;
+      }
+      
+      .image-container {
+        margin-top: 1%;
+        margin-right: 15%;
+        margin-left: -15%;
+       
+        object-position: center;
+        width: 150%;
+        height: 150%;
+        position:relative;
+      }
+      
+      .image {
+        width: 200%;
+        height: 170%;
+        background-size:contain;
+        position: absolute;
+        animation: imageAnimation 15s infinite;
+        opacity: 0;
+      }
+      
+      #image1 {
+        height:100%;
+        width: 400%;
+        background-image: url('{% static "ani3.jpg" %}');
+        animation-delay: 1s;
+       
+      }
+      
+      #image2 {
+        height:100%;
+        width: 400%;
+        background-image: url('{% static "ani2.jpg" %}');
+        animation-delay: 5s;
+      }
+      
+      #image3 {
+        height: 100%;
+        width:400%;
+        background-image: url('{% static "dig.jpeg" %}');
+        animation-delay: 9s;
+      }
+      
+      @keyframes imageAnimation {
+        0% {
+          opacity: 0.2;
+        }
+        25% {
+          opacity: 1;
+        }
+        75% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      .menu-bar {
+        position: fixed;
+        top: 2px;
+        right: 0;
+        background-color:#174371;
+        padding: 20px;
+        border-bottom-left-radius: 10px;
+      }
+      .menu-toggle {
+        color: #fff;
+        cursor:context-menu;
+      }
+      .menu-items {
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background-color: #789cc9;
+        padding: 10px;
+        border-radius: 7px;
+      }
+      .menu-items a {
+        width:100px;
+        display: block;
+        color: #464040;
+        text-decoration:solid;
+        margin-bottom: 10px;
+      }
+      .menu-items a:hover {
+        background-color: #2b83e1ef;
+      }
+      
+      #toggle:checked + .menu-items {
+        display: block;
+      }
+      .footer{
+        position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: #0a19a5;
+         color: white;
+         text-align: center;
+      }
+      
+  </style>
+</head>
+
+<body>
+  
+  <h1>PayEasy</h1>
+  <div class="header">
+    <div class="image-container">
+      <div class="image" id="image1"></div>
+      <div class="image" id="image2"></div>
+      <div class="image" id="image3"></div>
+      <button class="image-button"></button>
+    </div>
+  </div>
+    
+  <button class="image-button"> 
+ </button>
+  <a href="transfer">
+  <button class="image-button1"></button></a>
+  <button class="image-button2"></button><br><br>
+  
+  <a href="payment2.html">
+  <button class="image-button3"></button>
+  </a>
+  
+  <button class="image-button4"></button>
+  <a href="transaction_history1.html">
+  <button class="image-button5"></button>
+</a>
+  <div class="menu-bar">
+    <nav>
+      <label for="toggle" class="menu-toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" style="display:none;">
+      <div class="menu-items">
+        <a href="homebutton.html">Home</a>
+        <a href="#">Help</a>
+        <a href="login">LogOut</a>
+      </div>
+    </nav>
+  </div>
+  <div class="logo_container">
+    <img src='{% static "new_logo.jpg" %}' >
+    
+  </div>
+  <div class="footer">
+    <p>&copy; 2024 Our Company reserves all rights</p>
+  </div>
+
+</body>
+</html>

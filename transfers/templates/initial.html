@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightseagreen;
+}
+
+.container {
+  background-color: lightgray;
+  width: 350px;
+  padding: 20px;
+  margin: 100px auto;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #c92a2a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Set Initial Amount</h2>
+  <form action="initialbalance">
+  <label for="amount">Initial Amount:</label>
+  <input type="text" id="amount" name="amount"><br><br>
+  <label for="accountNumber">Account Number:</label>
+  <input type="text" id="accountNumber" name="accountNumber"><br><br>
+  <button type="submit">Set Amount</button>
+</form>
+</div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightseagreen;
+}
+
+.container {
+  background-color: lightgray;
+  width: 350px;
+  padding: 20px;
+  margin: 100px auto;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #c92a2a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Set Initial Amount</h2>
+  <form action="{% url 'initialbalance' %}" method="post">
+    {% csrf_token %}
+    <label for="amount">Initial Amount:</label>
+    <input type="text" id="amount" name="amount"><br><br>
+    <label for="accountNumber">Account Number:</label>
+    <input type="text" id="accountNumber" name="accountNumber"><br><br>
+    <button type="submit">Set Amount</button>
+  </form>
+</div>
+
+</body>
+</html>

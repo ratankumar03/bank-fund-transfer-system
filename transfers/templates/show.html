@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show User Details</title>
+</head>
+<body>
+    {% if user %}
+        <table>
+            <tr>
+                <th>Email</th>
+                <td>{{ user.email }}</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>{{ user.pwd }}</td>
+            </tr>
+            <tr>
+                <th>Account No</th>
+                <td>{{ user.Account_No }}</td>
+            </tr>
+            <tr>
+                <th>CIF No</th>
+                <td>{{ user.CIF_No }}</td>
+            </tr>
+            <tr>
+                <th>Branch Code</th>
+                <td>{{ user.Branch_Code }}</td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>{{ user.Country }}</td>
+            </tr>
+            <tr>
+                <th>Repeat Password</th>
+                <td>{{ user.Repeat_pwd }}</td>
+            </tr>
+            <tr>
+                <th>Facility Required</th>
+                <td>{{ user.Facility_Required }}</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>{{ user.gender }}</td>
+            </tr>
+            <tr>
+                <th>Registered Mobile No</th>
+                <td>{{ user.Registered_Mobile_No }}</td>
+            </tr>
+            <tr>
+                <th>Balance</th>
+                <td>{{ user.balance }}</td>
+            </tr>
+        </table>
+    {% else %}
+        <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>
